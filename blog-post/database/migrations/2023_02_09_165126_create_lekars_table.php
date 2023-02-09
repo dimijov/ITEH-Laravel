@@ -15,6 +15,11 @@ class CreateLekarsTable extends Migration
     {
         Schema::create('lekars', function (Blueprint $table) {
             $table->id();
+            $table->string('ime');
+            $table->string('prezime');
+            $table->string('jmbg')->unique();
+            $table->string('adresa');
+            $table->foreignId('grad_id')->constrained('grads');
             $table->timestamps();
         });
     }
