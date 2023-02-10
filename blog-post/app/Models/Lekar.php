@@ -14,8 +14,7 @@ class Lekar extends Model
     protected $fillable = [
         'ime',
         'prezime',
-        'jmbg',
-        'adresa',
+        'telefon',
         'grad_id'
     ];
 

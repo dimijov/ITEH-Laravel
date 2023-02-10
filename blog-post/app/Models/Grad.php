@@ -19,6 +19,6 @@ class Grad extends Model
 
 
     public function lekari(){
-        return $this->hasMany(Lekar::class)
+        return $this->hasMany(Lekar::class);
     }
 }

@@ -20,7 +20,7 @@ class CreatePacijentsTable extends Migration
             $table->string('dijagnoza');
             $table->string('terapija');
             $table->integer('godine');
-            $table->foreignId('lekar_id')->constrained('lekars');
+            $table->foreignId('lekar_id')->constrained('lekars'); 
             $table->timestamps();
         });
     }

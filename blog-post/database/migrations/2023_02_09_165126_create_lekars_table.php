@@ -17,9 +17,8 @@ class CreateLekarsTable extends Migration
             $table->id();
             $table->string('ime');
             $table->string('prezime');
-            $table->string('jmbg')->unique();
-            $table->string('adresa');
-            $table->foreignId('grad_id')->constrained('grads');
+            //$table->string('telefon'); ->preko migracije
+            $table->foreignId('grad_id')->constrained('grads'); 
             $table->timestamps();
         });
     }

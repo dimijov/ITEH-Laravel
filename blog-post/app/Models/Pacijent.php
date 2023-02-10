@@ -14,7 +14,7 @@ class Pacijent extends Model
         'ime',
         'prezime',
         'dijagnoza',
-        'terapija',
+        //'terapija', -zbog migracije 
         'godine',
         'lekar_id'
     ];
